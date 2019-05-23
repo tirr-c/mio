@@ -57,7 +57,7 @@ jobs:
     - script: rustup target add $(target)
       displayName: "Add target"
 
-    - script: cargo check --target $(target)
+    - script: cargo build --target $(target)
       displayName: Check source
 
     - script: cargo check --tests --target $(target)
